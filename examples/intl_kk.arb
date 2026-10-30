@@ -1,0 +1,16 @@
+{
+  "@@locale": "kk",
+  "app_title": "Grand Mobile",
+  "welcome_message": "Grand Mobile әлеміне қош келдіңіз!",
+  "profile_title": "Ойыншы профилі",
+  "player_online": "Желідегі ойыншылар: {count}",
+  "money_balance": "Баланс: {amount, number}",
+  "not_enough_money": "Ақша жеткіліксіз",
+  "buy_house_button": "Үй сатып алу",
+  "buy_car_button": "Көлік сатып алу",
+  "quest_done": "Тапсырма орындалды",
+  "quest_count": "{count, plural, one{{count} тапсырма} other{{count} тапсырма}}",
+  "error_network": "Желі қатесі. Қайталап көріңіз.",
+  "cancel_button": "Бас тарту",
+  "save_button": "Сақтау"
+}

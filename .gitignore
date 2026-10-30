@@ -3,6 +3,7 @@ data/
 out/
 *.arb
 !tests/**/*.arb
+!examples/*.arb
 review*.csv
 report*.json
 report*.html

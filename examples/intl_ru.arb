@@ -1,0 +1,16 @@
+{
+  "@@locale": "ru",
+  "app_title": "Grand Mobile",
+  "welcome_message": "Добро пожаловать в Grand Mobile!",
+  "profile_title": "Профиль игрока",
+  "player_online": "Игроков онлайн: {count}",
+  "money_balance": "Баланс: {amount, number}",
+  "not_enough_money": "Недостаточно денег",
+  "buy_house_button": "Купить дом",
+  "buy_car_button": "Купить машину",
+  "quest_done": "Задание выполнено",
+  "quest_count": "{count, plural, one{{count} задание} few{{count} задания} many{{count} заданий} other{{count} задания}}",
+  "error_network": "Ошибка сети. Попробуйте ещё раз.",
+  "cancel_button": "Отмена",
+  "save_button": "Сохранить"
+}
