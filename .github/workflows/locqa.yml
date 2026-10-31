@@ -1,6 +1,6 @@
 # Runs locqa on every pull request that touches ARB files.
-# Expects the template at l10n/intl_ru.arb and the glossary at glossary.csv;
-# adjust ARB_DIR / TEMPLATE below for your repository layout.
+# Example localization files live in examples/. For downstream projects, adjust
+# ARB_DIR / TEMPLATE to match the app's actual localization directory.
 name: locqa
 
 on:
@@ -10,7 +10,7 @@ on:
       - "glossary.csv"
 
 env:
-  ARB_DIR: l10n
+  ARB_DIR: examples
   TEMPLATE: intl_ru.arb
 
 jobs:

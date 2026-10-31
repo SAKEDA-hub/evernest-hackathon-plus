@@ -4,6 +4,8 @@ CLI-инструмент для кейса 02 «Qazaq Loc QA» (Grand Mobile × 
 
 Зависимостей нет, только стандартная библиотека Python ≥ 3.10.
 
+Для короткой демонстрации на синтетических ARB запустите `bash scripts/demo.sh`. Скрипт проверит чистый пример, внесёт три воспроизводимые ошибки в отдельную временную копию и покажет HTML-отчёты. Он не использует данные кейса и не изменяет примеры. См. также [готовность к хакатону и ограничения оценки](HACKATHON_READINESS.md).
+
 ```bash
 pip install -e .            # или: python -m locqa ...
 locqa check --source intl_ru.arb --target intl_kk.arb --glossary glossary.csv --out report.json
