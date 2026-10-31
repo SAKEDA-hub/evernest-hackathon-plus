@@ -4,10 +4,16 @@
 name: locqa
 
 on:
+  push:
+    paths:
+      - "**/*.arb"
+      - "glossary.csv"
+      - ".github/workflows/locqa.yml"
   pull_request:
     paths:
       - "**/*.arb"
       - "glossary.csv"
+  workflow_dispatch:
 
 env:
   ARB_DIR: examples
