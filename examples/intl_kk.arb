@@ -4,7 +4,7 @@
   "welcome_message": "Grand Mobile әлеміне қош келдіңіз!",
   "profile_title": "Ойыншы профилі",
   "player_online": "Желідегі ойыншылар: {count}",
-  "money_balance": "Баланс: {amount, number}",
+  "money_balance": "Баланс: {amount}",
   "not_enough_money": "Ақша жеткіліксіз",
   "buy_house_button": "Үй сатып алу",
   "buy_car_button": "Көлік сатып алу",

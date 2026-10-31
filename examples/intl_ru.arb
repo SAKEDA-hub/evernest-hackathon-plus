@@ -4,7 +4,7 @@
   "welcome_message": "Добро пожаловать в Grand Mobile!",
   "profile_title": "Профиль игрока",
   "player_online": "Игроков онлайн: {count}",
-  "money_balance": "Баланс: {amount, number}",
+  "money_balance": "Баланс: {amount}",
   "not_enough_money": "Недостаточно денег",
   "buy_house_button": "Купить дом",
   "buy_car_button": "Купить машину",
