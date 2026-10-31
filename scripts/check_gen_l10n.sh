@@ -14,8 +14,20 @@ flutter create --no-pub --project-name l10n_check app >/dev/null
 cd app
 flutter pub add flutter_localizations --sdk=flutter >/dev/null
 flutter pub add intl:any >/dev/null
-# enable code generation
-printf '\nflutter:\n  generate: true\n' >> pubspec.yaml
+# Enable code generation in Flutter's existing YAML section. Recent `flutter
+# create` templates already include a `flutter:` mapping, so appending another
+# mapping makes pubspec.yaml invalid (duplicate key).
+if ! grep -q '^  generate:' pubspec.yaml; then
+  if grep -q '^flutter:[[:space:]]*$' pubspec.yaml; then
+    awk '
+      /^flutter:[[:space:]]*$/ { print; print "  generate: true"; next }
+      { print }
+    ' pubspec.yaml > "$WORK/pubspec.yaml"
+    mv "$WORK/pubspec.yaml" pubspec.yaml
+  else
+    printf '\nflutter:\n  generate: true\n' >> pubspec.yaml
+  fi
+fi
 
 mkdir -p lib/l10n
 cp "$ARB_DIR"/*.arb lib/l10n/
